@@ -1,0 +1,28 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* VARIABLES */
+:root{
+  --background-gradient:linear-gradient(to right, #34e89e, #0f3443);
+  --primary-color: #1a1a1a;
+}
+
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+a:hover{
+  opacity: 1;
+}
+
+body{
+  background: var(--background-gradient);
+}

@@ -38,6 +38,12 @@ body{
   box-shadow: 0px 8px 24px 4px rgba(0, 0, 0, 0.2);
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .resultado{
   padding: 15px;
 }
@@ -81,11 +87,13 @@ body{
   letter-spacing: 0.05rem;
   transition: .4s;
   color: white;
+  border: none;
   border-radius: 6px;
 }
-
-.calcular:hover,
 .calcular:focus{
+  outline: none;
+}
+.calcular:hover{
   box-shadow: inset 400px 0 0 0 #34e89e;
 }
 h1{

@@ -12,13 +12,15 @@
   <section class="container">
     <h1>BMI - IMC calculator</h1>
     <h2>Calcule seu IMC abaixo</h2>
-    <label for="peso">Peso - 
-      Weight</label>
-    <input type="text" name="peso" id="peso" placeholder="Digite seu peso">
-    <label for="altura">Altura - 
-      Height</label>
-    <input type="text" name="altura" id="altura" placeholder="Digite sua altura">
-    <a href="#" class="calcular">Calcular</a>
+    <form action="/" method="post">
+      <label for="peso">Peso - 
+        Weight</label>
+      <input type="text" name="peso" id="peso" placeholder="Digite seu peso (000.00)">
+      <label for="altura">Altura - 
+        Height</label>
+      <input type="text" name="altura" id="altura" placeholder="Digite sua altura (0.00)">
+      <button class="calcular">Calcular</button>
+    </form>
     <div class="resultado"></div>
   
     <h1 style="text-align: left;">Tabela IMC - BMI</h1>

@@ -11,6 +11,8 @@ function calcularIMC(evento) {
     } else if (altura.value == '' || altura.value < 0.15 || altura.value > 3) {
         alert('Por favor, digite valores validos. (Altura entre 0.15m e 2.99m)')
     } else {
+        peso.value = peso.value.replace(',', '.')
+        altura.value = altura.value.replace(',', '.')
         const imc = Number(peso.value) / (Number(altura.value) ** 2)
 
         if (imc < 18.5) {

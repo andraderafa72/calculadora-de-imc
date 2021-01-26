@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMC - Calcule seu IMC aqui.</title>
   <link rel="stylesheet" href="./assets/css/style.css" class="css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
 </head>
 <body>
-
+  <section class="container">
+    <h1>BMI - IMC calculator</h1>
+    <h2>Calcule seu IMC abaixo</h2>
+    <label for="peso">Peso - 
+      Weight</label>
+    <input type="text" name="peso" id="peso" placeholder="Digite seu peso">
+    <label for="altura">Altura - 
+      Height</label>
+    <input type="text" name="altura" id="altura" placeholder="Digite sua altura">
+    <a href="#" class="calcular">Calcular</a>
+    <div class="resultado"></div>
+  
+    <h1 style="text-align: left;">Tabela IMC - BMI</h1>
+    <div class="resultados">
+      <p class="detalhes">
+      •Menos do que 18,5: <br>
+      •Entre 18,5 e 24,9: <br>
+      •Entre 25 e 29,9: <br>
+      •Entre 30 e 34,9: <br>
+      •Entre 35 e 39,9: <br>
+      •Mais do que 40: <br>
+    </p>
+    
+    <p class="detalhes">
+      Abaixo do peso; <br>
+      Peso normal; <br>
+      Sobrepeso; <br>
+      Obesidade grau 1; <br>
+      Obesidade grau 2; <br>
+      Obesidade grau 3;<br>
+    </p>
+  </div>
+</section> 
   <script src="./assets/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,6 +4,8 @@
 /* VARIABLES */
 :root{
   --background-gradient:linear-gradient(to right, #34e89e, #0f3443);
+  --container-color:#F1FCF6;
+  --input-color:rgb(224, 240, 237);
   --primary-color: #1a1a1a;
 }
 
@@ -16,13 +18,94 @@
 
 a{
   text-decoration: none;
-  opacity: 0.9;
-}
-
-a:hover{
-  opacity: 1;
 }
 
 body{
   background: var(--background-gradient);
+  font-family: 'Montserrat', sans-serif;
+  max-height: 100vh;
+}
+
+.container{
+  margin-top: 25px;
+  max-width: 400px!important;
+  padding: 40px 25px;
+  background-color: var(--container-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 18px;
+
+  box-shadow: 0px 8px 24px 4px rgba(0, 0, 0, 0.2);
+}
+
+.resultado{
+  padding: 15px;
+}
+
+.resultados{
+  display: flex;
+  justify-content: space-around;
+}
+
+.resultados p{
+  margin-right: 20px;
+  font-size: 0.9rem;
+}
+
+.container input{
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--input-color);
+}
+
+.container input:focus{
+  outline: none;
+  border: 1px solid rgba(105, 170, 158, 0.542);
+}
+
+
+.container label{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.container .calcular{
+  text-decoration: none;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 12px;
+  background: #0f3443;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  transition: .4s;
+  color: white;
+  border-radius: 6px;
+}
+
+.calcular:hover,
+.calcular:focus{
+  box-shadow: inset 400px 0 0 0 #34e89e;
+}
+h1{
+  text-align: center;
+  font-size: 2.3rem!important;
+}
+h2{
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3rem!important;
+  margin-bottom: 20px!important;
+  color: rgba(0,0,0,.5);
+}
+
+@media(max-width:1280px){
+  .container, aside{
+    position: relative;
+  }
+  aside{
+    margin: 0 auto
+  }
 }
